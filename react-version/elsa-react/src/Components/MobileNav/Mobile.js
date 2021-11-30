@@ -6,12 +6,12 @@ import ListItem from "@mui/material/ListItem";
 import SwipeableDrawer from "@mui/material/SwipeableDrawer";
 import React, { useState } from "react";
 import { GoThreeBars } from "react-icons/go";
-import {Link, useLocation} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import {
   menu__toggle,
   menuBox,
   menuPaper,
-  logo_sidebar,
+
     list_options,
   listText
 } from "../../styles/mobile.module.scss";
@@ -44,18 +44,16 @@ function Sidebar({ menulist }) {
     >
       <List>
         <div>
-          <Link to='/'>
-            <h1 style={{color: '#fff'}}>
-          Elsa
-            </h1>
+          <Link to="/">
+            <h1 style={{ color: "#fff" }}>Elsa</h1>
           </Link>
         </div>
         <div className={list_options}>
-          {menulist.map((item) => (
-            <List>
+          {menulist.map((item, i) => (
+            <List key={`${item.path}${i}`}>
               <ListItem button key={item}>
                 <Link to={`${item.path}`}>
-                <p className={listText}>{item.target}</p>
+                  <p className={listText}>{item.target}</p>
                 </Link>
               </ListItem>
             </List>

@@ -1,5 +1,4 @@
 import React from 'react';
-import image from '../images/imageThree.jpg';
 import {container, about, container_image} from '../styles/about.module.scss';
 
 

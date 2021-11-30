@@ -41,9 +41,9 @@ const Footer = () => {
         <div>
           <p>Download Elsa</p>
 
-          <img className={styles.download} src={AppStore} />
+          <img className={styles.download} src={AppStore} alt='download' />
 
-          <img className={styles.download} src={GooglePlay}/>
+          <img className={styles.download} src={GooglePlay} alt='googleplay'/>
         </div>
 
         <div>
@@ -54,10 +54,10 @@ const Footer = () => {
 
         <div>
           <p>Join us on</p>
-          <img src={facebook} className={styles.facebook} />
-          <img src={twitter} className={styles.twitter} />
-          <img src={instagram} className={styles.instagram} />
-          <img src={youtube} className={styles.youtube} />
+          <img src={facebook} className={styles.facebook} alt='facebook' />
+          <img src={twitter} className={styles.twitter} alt='twitter' />
+          <img src={instagram} className={styles.instagram} alt='instagram' />
+          <img src={youtube} className={styles.youtube} alt='youtube' />
         </div>
         
       </div>): (<></>)}

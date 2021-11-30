@@ -58,7 +58,7 @@ function HomeSlides() {
           <div className={Wrapper}>
             <div className={Slider}>
               {Slides.map((item, i) => (
-                <div key={`home${i}`} className={HomeSlide}>
+                <div key={`home${i}`} className={HomeSlide} >
                   {i === current && (
                     <div className={SliderHandler}>
                       <img

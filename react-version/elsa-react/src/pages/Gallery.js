@@ -102,6 +102,7 @@ function Gallery() {
         >
           {titles.map((title, i) => (
             <div
+              key={`${title.price}${i}`}
               className={home_color}
               style={{ backgroundColor: title.theme }}
             >
@@ -113,7 +114,7 @@ function Gallery() {
               </p>
               <p style={{ cursor: "pointer" }} className={view_more}>
                 <Link to={`/home/${title.title}`}>
-                View More <AiOutlineArrowRight />
+                  View More <AiOutlineArrowRight />
                 </Link>
               </p>
             </div>
@@ -123,6 +124,7 @@ function Gallery() {
           {homes.map((image, i) => (
             <>
               <div
+                key={`${image.theme}${i}`}
                 style={{
                   background: `url(${image.image})`,
                   backgroundRepeat: "no-repeat",

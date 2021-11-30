@@ -2,7 +2,6 @@ import React from 'react';
 import {
   container,
   banner,
-  contact_lines,
   form_heading,
   contact_form,
   input_container,
