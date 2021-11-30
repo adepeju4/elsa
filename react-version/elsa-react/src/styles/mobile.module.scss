@@ -1,0 +1,42 @@
+.menu__toggle{
+    color: #fff;
+    width: 2rem;
+    height: 1rem;
+}
+
+.menuBox{
+    background-color: #808080;
+    height: 100%;
+    color: #fff;
+    padding: 2rem 1rem;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .MuiBackdrop-root{
+display: none;
+}
+
+.logo_sidebar {
+  display: flex;
+  flex: 0.3;
+  width: 100%;
+}
+
+.list_options{
+    margin-top: 1rem; 
+}
+
+.listText{
+     margin-top: 2rem;
+     font-size: 1.2rem;
+}
+
+.list_options a{
+    text-decoration: none;
+    color: #fff;
+}

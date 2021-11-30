@@ -1,0 +1,69 @@
+.NavbarContainer{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 2rem 1rem 10rem;
+    background: rgba($color: #000000, $alpha: 0.4);
+    z-index: 15;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Logo{
+    color: #fff;
+    font-size: 3rem;
+    font-style: italic;
+  a{
+            color: #fff;
+        }
+}
+
+.Toggler{
+    display: none;
+
+}
+
+.NavMenu{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    .NavLinks{
+        font-size: 1.5rem;
+        
+            width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    flex-direction: row;
+    .NavItem{
+        cursor: pointer;
+        margin-left: 10rem;
+        a{
+            color: #fff;
+        }
+    }
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .NavbarContainer{
+          padding: 1rem .5rem;
+    }
+    .Toggler{
+   color: #fff;
+      transform: translate(-50%, 25%) rotate(-90deg);
+    display: block;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    }
+   .NavMenu{
+        display: none;
+   }
+  }

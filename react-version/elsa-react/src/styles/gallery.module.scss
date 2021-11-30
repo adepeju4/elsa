@@ -1,0 +1,118 @@
+.container{
+    max-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.slider_container{
+    position: relative;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.left_slide{
+    height: 100vh;
+   
+  width: 35%;
+      position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform .5s ease-in-out;
+
+}
+
+.left_slide > div{
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.left_slide h1{
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+}
+
+.left_slide a{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.right_slide{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 35%;
+        width: 65%;
+        transition: transform .5s ease-in-out;
+}
+
+.right_slide > div{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+
+button{
+    background-color: #fff;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+button:hover{
+    color: #222;
+}
+
+button:focus{
+    outline: none;
+}
+
+.slider_container .action_buttons button{
+    position: absolute;
+    left: 35%;
+    top: 50%;
+    z-index: 100;
+}
+
+.slider_container .action_buttons .down_button{
+    transform: translateX(-100%);
+    border-top-left-radius: .5rem;
+    border-bottom-left-radius: .5rem;
+}
+
+.slider_container .action_buttons .up_button{
+    transform: translateY(-100%);
+      border-top-right-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+@media(max-width: 556px){
+    .left_slide h1{
+        font-size: 1rem;
+    }
+    .left_slide p:not(:last-child){
+        display: none;
+    }
+}
